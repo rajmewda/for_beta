@@ -1,0 +1,7 @@
+# Netlify: serve the locally pre-built dist folder without running a build
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Safe fallback if remote builds keep failing:
+# set "Build command" empty in the Netlify UI and publish = "dist"
